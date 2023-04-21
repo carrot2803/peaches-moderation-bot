@@ -6,11 +6,11 @@ Peaches is a lightweight Discord moderation bot written in plain Javascript. It 
 
 Peaches includes the following features:
 
--Ability to ban, kick, warn, and mute users
--Capability to set auto-role and lock channels
--Built-in AI command "/peachAI" to answer complex questions
--Option to delete messages and clear channels
--Command to check the server's ping and uptime
+-Ability to ban, kick, warn, and mute users <br />
+-Capability to set auto-role and lock channels  <br />
+-Built-in AI command "/peachAI" to answer complex questions <br />
+-Option to delete messages and clear channels <br />
+-Command to check the server's ping and uptime  <br />
 
 ## Usage
 
