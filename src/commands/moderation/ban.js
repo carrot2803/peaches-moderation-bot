@@ -11,9 +11,9 @@ module.exports = {
 		const member = interaction.options.getMember('target');
 		const reason = interaction.options.getString('reason') || 'No reason provided';
 		
-		if (!member.bannable) return interaction.reply({ content: `I cannot ban ${member.user.username}.`, ephemeral: true });
+		if (!member.bannable) return interaction.reply({ content: `I cannot ban ${member.user.username}.`, ephemeral: false });
 		
 		await member.ban({ reason });
-		return interaction.reply({ content: `Banned: ${member.user.username}. Reason: ${reason}`, ephemeral: true });
+		return interaction.reply({ content: `Banned: ${member.user.username}. Reason: ${reason}`, ephemeral: false });
 	},
 };

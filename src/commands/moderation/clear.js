@@ -9,7 +9,7 @@ module.exports  = {
     async execute(interaction){
         const amount = interaction.options.getInteger('amount');
         if(amount < 1 || amount > 99 ) return interaction.reply({
-            content: `You need to input a number of 1 to 99.`, ephemeral: true 
+            content: `You need to input a number of 1 to 99.`, ephemeral: false 
         });
 
         await interaction.channel.bulkDelete(amount,true).catch(error => {
@@ -17,6 +17,6 @@ module.exports  = {
             interaction.reply({content: 'Error trying to clear messages', ephemeral: true});
         });
 
-        return interaction.reply({content: `I cleared \`${amount}\` messages`, ephemeral: true})
+        return interaction.reply({content: `I cleared \`${amount}\` messages`, ephemeral: false})
     },
 };

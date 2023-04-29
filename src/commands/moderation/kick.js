@@ -15,6 +15,6 @@ module.exports = {
 		
 		const reason = interaction.options.getString('reason') || 'No reason provided.';
 		await member.kick(reason);
-		return interaction.reply({ content: `Kicked: ${member.user.username}\nReason: ${reason}`, ephemeral: true });
+		return interaction.reply({ content: `Kicked: ${member.user.username}\nReason: ${reason}`, ephemeral: false });
 	},
 };
