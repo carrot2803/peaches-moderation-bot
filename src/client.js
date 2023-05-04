@@ -24,6 +24,7 @@ client.once(Events.ClientReady, () => {
 	client.guilds.cache.forEach(guild => {
 		console.log(`${guild.name} (id: ${guild.id})`);
 	});
+	client.user.setActivity('/help for more info');
 });
 
 client.on(Events.InteractionCreate, async interaction => {
