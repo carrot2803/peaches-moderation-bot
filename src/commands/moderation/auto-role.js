@@ -9,7 +9,7 @@ module.exports = {
         .addRoleOption(option => option.setName('role').setDescription('Role to set for auto-role')),
     async execute(interaction) {
         const role = interaction.options.getRole('role');
-        roleName = role ? role.name : '';
+        roleName = role ? role.name : 'vegetables';
         await interaction.reply({ content: `Auto-role set to ${roleName}`, ephemeral: false });
     },
     getroleName() {
