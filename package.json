@@ -4,7 +4,8 @@
 	"description": "A light discord moderation bot written by carrot",
 	"main": "./src/index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node src/index.js"
 	},
 	"keywords": [],
 	"author": "carrot(Dmitri Lezama)",
