@@ -13,7 +13,7 @@ module.exports = {
             title: 'Available Commands',
             description: commandList,
             footer: {
-                text: "carrot's Bot"
+                text: "carrot Bot"
             }
         };
 
